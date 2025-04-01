@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PDL>
+	<packet name="S_BroadcastEnterGame">
+		<int name="playerId"/>
+	</packet>
+	<packet name="C_LeaveGame">
+	</packet>
+	<packet name="S_BroadcastLeaveGame">
+		<int name="playerId"/>
+	</packet>
+	<packet name="S_PlayerList">
+		<list name="player">
+			<bool name="isSelf"/>
+			<int name="playerId"/>
+		</list>
+	</packet>
+	<packet name="C_MatchRequest">
+	</packet>
+	<packet name="S_MatchSuccess">
+		<int name="roomId"/>
+		<int name="playerId"/>
+	</packet>
+	<packet name="C_ThrowYut">
+		<int name="playerId"/>
+	</packet>
+	<packet name="S_YutResult">
+		<int name="playerId"/>
+		<int name="value"/>
+	</packet>
+	<packet name="C_TurnChange">
+		<int name="playerId"/>
+	</packet>
+	<packet name="S_TurnChange">
+		<int name="playerId"/>
+	</packet>
+	<packet name="C_MovePiece">
+		<int name="playerId"/>
+		<int name="pieceIndex"/>
+		<int name="startIndex"/>
+		<int name="distance"/>
+	</packet>
+	<packet name="S_MovePiece">
+		<int name="playerId"/>
+		<int name="pieceIndex"/>
+		<int name="startIndex"/>
+		<int name="distance"/>
+	</packet>
+	<packet name="C_GameWin">
+		<int name="playerId"/>
+	</packet>
+	<packet name="S_GameWin">
+		<int name="winnerId"/>
+	</packet>
+</PDL>
