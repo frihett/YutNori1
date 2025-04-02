@@ -41,7 +41,6 @@ public class NetworkManager : MonoBehaviour
 
     }
 
-    // update is called once per frame
     void Update()
     {
         List<IPacket> list = PacketQueue.instance.PopAll();

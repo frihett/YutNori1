@@ -490,7 +490,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 807f0000
     m_LastClickedID: 32640
-    m_ExpandedIDs: 0000000084b5000086b5000088b500008ab500008cb500008eb5000090b5000092b5000094b5000096b5000098b50000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -519,7 +519,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000084b5000086b5000088b500008ab500008cb500008eb5000090b5000092b5000094b5000096b5000098b50000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 201, y: 357.25003}
+  m_TargetSize: {x: 754, y: 357.25003}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -634,8 +634,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -80.4
-    m_HBaseRangeMax: 80.4
+    m_HBaseRangeMin: -301.6
+    m_HBaseRangeMax: 301.6
     m_VBaseRangeMin: -142.90001
     m_VBaseRangeMax: 142.90001
     m_HAllowExceedBaseRangeMin: 1

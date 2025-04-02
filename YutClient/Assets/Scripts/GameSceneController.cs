@@ -8,7 +8,7 @@ public class GameSceneController : MonoBehaviour
 {
     public GameObject piecePrefab;
     public MoveUIController moveUI;
-    public Button throwButton; // 윷 던지기 버튼
+    public Button throwButton; 
     public TMP_Text textPlayerId;
     public TMP_Text textTurnPlayer;
     public GameObject winPanel;

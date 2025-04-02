@@ -18,7 +18,7 @@ public class MenuUIController : MonoBehaviour
 
     void Start()
     {
-        // MenuSet 안의 버튼들 찾기
+        
         menuSet = GameObject.Find("MenuSet");
 
         menuButton = menuSet.transform.Find("MenuButton").GetComponent<Button>();
@@ -32,7 +32,7 @@ public class MenuUIController : MonoBehaviour
         createRoomButton = multiplayerOptionsPanel.transform.Find("CreateRoomButton").GetComponent<Button>();
         backButton = multiplayerOptionsPanel.transform.Find("BackButton").GetComponent<Button>();
 
-        // 이벤트 연결
+        
         multiplayerButton.onClick.AddListener(OnClickMultiplayer);
         backButton.onClick.AddListener(OnClickBack);
         randomMatchButton.onClick.AddListener(OnClickRandomMatch);

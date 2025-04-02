@@ -74,7 +74,7 @@ public class BoardManager : MonoBehaviour
         }
 
        
-        UnityEngine.Debug.Log(" Board Initialization Complete!");
+        UnityEngine.Debug.Log(" 보드 생성");
     }
 
     void AddNode(int idx, Vector3 pos, int next)

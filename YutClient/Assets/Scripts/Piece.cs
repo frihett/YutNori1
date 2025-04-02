@@ -6,16 +6,16 @@ using UnityEngine;
 public class Piece : MonoBehaviour
 {
     public int currentIndex = -1;         // 보드 상 위치
-    public int ownerId;                   // 소유 플레이어 ID 추가 ✅
-    private int previousIndex = -1; // 이전 노드를 추적
+    public int ownerId;                  
+    private int previousIndex = -1; 
 
 
     private Queue<int> moveQueue = new Queue<int>();
     private bool isMoving = false;
 
-    public List<Piece> stackedPieces = new List<Piece>(); // ✅ 같이 이동할 말들
+    public List<Piece> stackedPieces = new List<Piece>(); // 쌓인 말
 
-    public System.Action onMoveEnd; // ✅ 이동 종료 콜백
+    public System.Action onMoveEnd; 
 
     public void EnqueueMove(int dist)
     {
@@ -56,7 +56,7 @@ public class Piece : MonoBehaviour
 
                 currentNode.piecesOnThisNode.Remove(this);
 
-                // ✅ 지름길 우선 처리
+                //  지름길 
                 if (currentNode.shortIndex != -1 && i == 0)
                         nextIndex = currentNode.shortIndex;
                     else
@@ -67,7 +67,7 @@ public class Piece : MonoBehaviour
                         else if (previousIndex == 21)
                             nextIndex = 23; // 21 → 22 → 23
                         else
-                            nextIndex = currentNode.nextIndex; // fallback
+                            nextIndex = currentNode.nextIndex; 
                         }else
                     nextIndex = currentNode.nextIndex;
 
@@ -101,12 +101,12 @@ public class Piece : MonoBehaviour
 
         isMoving = false;
 
-        // ✅ 이동 끝났으면 콜백 실행
+        // 콜백
         onMoveEnd?.Invoke();
         onMoveEnd = null;
         UnityEngine.Debug.Log("콜백 실행");
 
-        TryStackOnCurrentNode(); // ✅ 이동 후 스택 처리
+        TryStackOnCurrentNode(); 
 
     }
 
@@ -133,7 +133,7 @@ public class Piece : MonoBehaviour
     {
         UnityEngine.Debug.Log($" Piece 클릭됨!  OwnerID: {ownerId}, CurrentIndex: {currentIndex}, Position: {transform.position}");
 
-        // 예시: 클릭 시 GameManager에 선택 알림
+        
         GameManager.Instance.selectedPiece = this;
     }
 

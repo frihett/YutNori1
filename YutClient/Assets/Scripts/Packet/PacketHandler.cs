@@ -52,13 +52,13 @@ using System.Threading.Tasks;
         S_YutResult pkt = packet as S_YutResult;
         ServerSession serverSession = session as ServerSession;
 
-        // 내 플레이어 ID일 때만 처리 (다중 플레이어 클라이언트면 유지)
+        
         if (pkt.playerId != GameManager.Instance.PlayerId)
             return;
 
      
 
-        // 이동 옵션 UI 표시
+        // 이동 표시
         GameManager.Instance.moveUI.ShowMoveOptions(pkt.value);
     }
 

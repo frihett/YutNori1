@@ -13,7 +13,7 @@ public class MoveUIController : MonoBehaviour
 
     public void ShowMoveOptions(int value)
     {
-        // 👉 버튼이 몇 개 있는지 확인 (위치 조정을 위해 필요)
+       
         int existingButtons = buttonPanel.childCount;
 
         GameObject btnObj = Instantiate(buttonPrefab, buttonPanel);
@@ -32,8 +32,7 @@ public class MoveUIController : MonoBehaviour
         });
 
         
-
-        // 🟢 4(윷) 또는 5(모)일 경우, 다시 던질 수 있도록 버튼 활성화 유지
+        // 윷 , 모 
         if (value == 4 || value == 5)
         {
             GameManager.Instance.throwButton.interactable = true;
